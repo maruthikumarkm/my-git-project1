@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MSD: Empowering Farmers with Direct Market Access</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js"></script>
+        
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-green-600">MSD</h1>
+            <nav class="flex items-center space-x-4">
+                <a href="#features" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Features</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">How It Works</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Contact</a>
+                <button onclick="openPriceListModal()" class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition duration-300 font-semibold">Get Started</button>
+            </nav>
+        </div>
+    </header>
+
+     
+    <section class="relative py-16 md:py-24 bg-white overflow-hidden">
+        <div class="absolute inset-0 z-0 image-overlay">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&h=1080&fit=crop&q=80" alt="Fresh farm produce" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-base font-semibold text-green-600 mb-3 uppercase tracking-wider">To Every Hardworking Farmer</p>
+                    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        <span class="text-green-600">No More Middlemen.</span><br/>Keep Your True Profits.
+                    </h2>
+                    <p class="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed max-w-2xl">
+                        Tired of unpredictable prices and losing profits to middlemen? With MSD, know the best market prices before you harvest, sell directly to bulk buyers like restaurants and supermarkets, and keep more of your hard-earned money.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="openPriceListModal()" class="inline-block bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-green-700 transition duration-300 cta-shadow text-center">
+                            Get Free Price Alerts
+                        </button>
+                        <button onclick="openSpecialistModal()" class="inline-block bg-white text-green-600 border-2 border-green-600 px-8 py-4 rounded-xl text-lg font-bold hover:bg-green-50 transition duration-300 text-center">
+                            Talk to a Specialist
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=600&fit=crop&q=80" alt="Farmer with fresh produce" class="rounded-2xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="how-it-works" class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">How MSD Empowers You</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Three simple steps to maximize your profits and minimize waste</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600&h=400&fit=crop&q=80" alt="Farmer using smartphone to list produce" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-3">1</div>
+                            <h4 class="text-xl font-bold text-gray-900">Get Daily Price Alerts</h4>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Receive free daily voice or SMS alerts with live prices from major markets via a simple phone call or our mobile app.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&q=80" alt="Business handshake between farmer and buyer" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-3">2</div>
+                            <h4 class="text-xl font-bold text-gray-900">Sell Directly to Buyers</h4>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Connect directly with restaurants and supermarkets. Choose the best offer with full transparency and no middlemen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&q=80" alt="Secure payment transaction" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-3">3</div>
+                            <h4 class="text-xl font-bold text-gray-900">Fast Payment & Transport</h4>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            We arrange affordable, reliable transport to deliver your goods fresh. Get quick, direct payments to your account.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-green-50 border-l-4 border-green-600 p-6 rounded-lg">
+                <p class="text-lg text-gray-800 font-semibold">
+                    ✓ Know market prices before you harvest<br>
+                    ✓ Increase profits by <span class="text-green-600">30-40%</span> by cutting out middlemen<br>
+                    ✓ Reduce waste with reliable transport
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-12">
+                Features That Put You in Control
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 border-t-4 border-green-600">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=400&fit=crop&q=80" alt="Farmer receiving price alerts on phone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-3 text-gray-900">Daily Price Alerts</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Get free daily voice or SMS alerts with live market prices, so you can plan your harvest and maximize profits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 border-t-4 border-blue-600">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&q=80" alt="Farmer and buyer handshake" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-3 text-gray-900">Direct Buyer Connections</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Sell directly to verified bulk buyers like restaurants and supermarkets, ensuring you get the best price without middlemen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 border-t-4 border-yellow-600">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=600&h=400&fit=crop&q=80" alt="Reliable transport for farm produce" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-3 text-gray-900">Affordable Transport</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            We arrange reliable, cost-effective transport to deliver your goods fresh, reducing waste and hassle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="testimonials" class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Farmers Thriving with MSD</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hear from farmers who've taken control of their profits</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <span class="quote-mark">"</span>
+                        <div class="ml-4 flex-1">
+                            <p class="text-gray-600 italic leading-relaxed mb-4">
+                                "MSD's price alerts helped me plan my harvest better. I sold directly to a supermarket and doubled my profits!"
+                            </p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face&q=80" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Sarah Johnson</h5>
+                                    <p class="text-sm text-gray-500">Vegetable Farmer, Texas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <span class="quote-mark">"</span>
+                        <div class="ml-4 flex-1">
+                            <p class="text-gray-600 italic leading-relaxed mb-4">
+                                "The app is so simple, and the transport service ensured my produce arrived fresh. My income is up 40%!"
+                            </p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face&q=80" alt="Mike Chen" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Mike Chen</h5>
+                                    <p class="text-sm text-gray-500">Grain Farmer, California</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <span class="quote-mark">"</span>
+                        <div class="ml-4 flex-1">
+                            <p class="text-gray-600 italic leading-relaxed mb-4">
+                                "No more middlemen eating my profits. MSD connected me directly to buyers, and payments are instant."
+                            </p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face&q=80" alt="Raj Patel" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Raj Patel</h5>
+                                    <p class="text-sm text-gray-500">Fruit Farmer, Florida</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="text-2xl font-bold text-green-400 mb-3">MSD</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering farmers with direct market access, transparent prices, and fair profits.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-green-400 transition">Our Features</a></li>
+                        <li><a href="#how-it-works" class="hover:text-green-400 transition">How It Works</a></li>
+                        <li><a href="#testimonials" class="hover:text-green-400 transition">Testimonials</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-3">Contact Us</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Email: <a href="mailto:support@msdplatform.com" class="text-green-400 hover:text-green-300 transition break-all">support@msdplatform.com</a></p>
+                        <p>Phone: <a href="tel:+18005550199" class="text-green-400 hover:text-green-300 transition">1-800-555-0199</a></p>
+                        <p>WhatsApp: Send <span class="text-green-400">'PROFIT'</span> to <a href="https://wa.me/18005550199" class="text-green-400 hover:text-green-300 transition">1-800-555-0199</a></p>
+                        <p class="leading-relaxed">Address: 123 Farm Road, Agribusiness City, US 10001</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">&copy; 2025 MSD Platform. All rights reserved.</div>
+        </div>
+    </footer>
+
+  
+    <div id="priceListModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePriceListModal()">&times;</span>
+            <div class="p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Today's Market Price Alerts</h3>
+                    <p class="text-gray-600 text-lg">Preview live market prices for popular crops. Sign up to get these updates daily via SMS, voice, or WhatsApp.</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-green-100">
+                                <th class="p-3 text-sm font-semibold text-gray-700">Crop</th>
+                                <th class="p-3 text-sm font-semibold text-gray-700">Market</th>
+                                <th class="p-3 text-sm font-semibold text-gray-700">Price per Unit</th>
+                                <th class="p-3 text-sm font-semibold text-gray-700">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b"><td class="p-3 text-gray-600">Tomatoes</td><td class="p-3 text-gray-600">Chicago Wholesale</td><td class="p-3 text-gray-600">$2.50/kg</td><td class="p-3 text-gray-600">Oct 09, 2025</td></tr>
+                            <tr class="border-b"><td class="p-3 text-gray-600">Corn</td><td class="p-3 text-gray-600">Texas Market</td><td class="p-3 text-gray-600">$0.75/ear</td><td class="p-3 text-gray-600">Oct 09, 2025</td></tr>
+                            <tr class="border-b"><td class="p-3 text-gray-600">Apples</td><td class="p-3 text-gray-600">Florida Retail</td><td class="p-3 text-gray-600">$3.20/kg</td><td class="p-3 text-gray-600">Oct 09, 2025</td></tr>
+                            <tr class="border-b"><td class="p-3 text-gray-600">Lettuce</td><td class="p-3 text-gray-600">California Market</td><td class="p-3 text-gray-600">$1.80/head</td><td class="p-3 text-gray-600">Oct 09, 2025</td></tr>
+                            <tr class="border-b"><td class="p-3 text-gray-600">Potatoes</td><td class="p-3 text-gray-600">New York Wholesale</td><td class="p-3 text-gray-600">$1.50/kg</td><td class="p-3 text-gray-600">Oct 09, 2025</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 mb-4 font-semibold">Get these prices daily to plan your harvest and maximize profits.</p>
+                    <a href="https://wa.me/18005550199?text=PROFIT" class="inline-block bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-green-700 transition duration-300 cta-shadow">
+                        Send 'PROFIT' on WhatsApp
+                    </a>
+                    <p class="text-gray-600 mt-4">Or call <a href="tel:+18005550199" class="text-green-600 hover:text-green-700">1-800-555-0199</a> to start receiving alerts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div id="specialistModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSpecialistModal()">&times;</span>
+            <div class="p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Talk to a Specialist</h3>
+                    <p class="text-gray-600 text-lg">Have questions about MSD? Fill out the form, and our team will contact you within 24 hours.</p>
+                </div>
+
+                <form id="specialist-form" class="space-y-4">
+                    <div>
+                        <label for="specialist-name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                        <input type="text" id="specialist-name" name="name" placeholder="John Doe" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
+                    </div>
+
+                    <div>
+                        <label for="specialist-email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" id="specialist-email" name="email" placeholder="john@example.com" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
+                    </div>
+
+                    <div>
+                        <label for="specialist-phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" id="specialist-phone" name="phone" placeholder="+1 (555) 123-4567" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
+                    </div>
+
+                    <div>
+                        <label for="specialist-message" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                        <textarea id="specialist-message" name="message" rows="4" placeholder="Tell us how we can help you..." required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-green-600 text-white px-6 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition duration-300 cta-shadow mt-6">
+                        Send Message
+                    </button>
+                </form>
+
+                <div id="specialist-message-box" class="mt-6 p-4 rounded-lg text-center font-semibold hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
